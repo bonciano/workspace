@@ -1,0 +1,111 @@
+###########################################################################
+
+		COMANDOS UTILES PARA LINUX
+
+###########################################################################
+# updetear y upgredear paquetes del gestor
+sudo apt update
+sudo apt upgrade
+
+# instalar paquetes
+sudo apt-get install "paquete"
+
+# ver paquetes instalados
+sudo apt list --installed
+
+# eliminar paquetes instalados
+sudo apt remove "programa"
+
+# elimina archivos residuales de programas que se desinstalaron
+sudo apt autoremove
+
+# limpiar el cache de los programas
+sudo apt autoclean
+
+# verificar estado de la RAM
+htop # con ctrl+c se sale 
+
+# especificaciones de la PC
+neofetch
+
+# reiniciar el sistema
+reboot
+
+# ver la ruta donde estoy parado
+pwd
+
+# ver usuario que estamos utilizando
+whoami
+
+# es como el more pero se puede navegar con las flechas y se puede buscar palabras con la /
+less
+
+# copiar archivo de origen a destino
+cp "origen" "destino"
+
+# mover archivo de origen a destino
+mv "origen" "destino"
+
+# procesos que se estan ejecutando actualmente en la pc (recomendado ps -ef)
+ps
+
+# ejecutar el proceso desde donde estoy parado en este momento
+./script.sh
+
+# ejecutar proceso en segundo plano sin bloquear la consola (colocar & al final)
+brave &
+
+# buscar proceso por process id (PID) (| para filtrar) (grep para buscar)
+ps -ef|grep "proceso"
+
+# matar un proceso
+kill -9 "PID"
+
+#  ver las interfaces de red de un protocolo específico (-4 es para buscar TCPIPv4)
+ip -4 a
+
+# monitorear recursos que estamos utilizando
+top
+
+# donde tengo instalada tal aplicacion
+which "aplicacion"
+
+# crear un archivo con una cadena (el > sirve para direccionarlo a un archivo, pisa todo el contenido si ya existe e inserta la cadena)
+echo "Hola mundo" > test.txt
+
+# crear un arhivo con una cadena (el >> no borra lo que tiene dentro el archivo, agrega lineas)
+echo "Hola mundo" >> test.txt
+
+# ver el contenido de las variables de ambiente
+echo $PATH # (El $ delante indica que es una cadena de texto, no un numero u otro tipo de dato)
+
+# lista de variables de ambiente
+env
+
+# permite colocarle un valor o activarle un valor a una variable que tengamos personalizada o que hayamos cambiado el valor
+export
+#uso que se le da, modificar el valor de la variable PATH, ej: export PATH=$PATH:/opt/bin
+
+# muestra las primeras 10 lineas
+head
+
+# muestra las ultimas 10 lineas de un achivo de texto
+tail
+
+# nos dice las cuentas que estan activas en ese momento (sobre todo cuando estamos conecectados a un escritorio remoto o a un SSH)
+who
+
+# otra forma de usar el comando who, es: (nos da mas info)
+w 
+
+# pisar el archivo con un contenido vacio
+> "archivo"
+
+
+
+
+
+
+
+
+

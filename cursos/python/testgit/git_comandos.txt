@@ -1,0 +1,51 @@
+##################################### Nuevo (Video Hola Mundo )
+git --version # Para saber si esta correctamente instalado GIT
+
+# Configuracion global (no por proyecto)
+git config --global user.name "Lucas Otermin"
+git config --global user.email lucasotermin@gmail.com
+git config --global core.editor vim
+git config --global core.editor "code --wait" #wait es para que espere a que se inicie el editor de texto.
+git config --global -e #para ver el archivo de configuracion dentro del editor seleccionado
+git config --global core.autocrlf input #para windows va true en lugar de input
+git config -h #comando para ayuda
+
+# Configuracion de proyecto (Una vez que estoy dentro de la carpeta del proyecto)
+git init #Inicializa un repositorio git dentro del repositorio dentro de mi carpeta de proyecto.
+#La carpeta .git es ignorada por todos los repositorios que vayamos a crear.
+git status #muestra el estado actual del repositorio
+git add # agrega archivo que estuve trabajando
+git commit -m "Mensaje para el commit que tenga sentido"
+git mv archivo1.py archivo11.py #se utiliza para renombrar un archivo en la etapa de trabajo y staging
+git rm archivo2.py #se utiliza para borrar el archivo de la etapa de trabajo y la de staging
+git restore --staged archivo1.py #si queremos quitar un cambio que mandamos a staging
+git restore archivo1.py #Si quisiera descartar los cambios
+
+#Ignorando archivos de variables de entorno por ejemplo
+crear un archivo de variables de entorno .env
+crear un archivo .gitignore (dentro van los nombres de los archivos que quiero ignorar.)
+git status -s #forma linda de mostrar el status
+git diff #ver cambios que hice
+git diff --staged #nos muestra todos los cambios que se encuentran en la etapa de staged
+git log #sirve para revisar el historial del repositorio (este tiene mucha info)
+git log --oneline #este es mejor
+
+#Para hacer una rama (branch), para seguir agregando commits, pero es paralelo a la rama principal (main)
+git branch #es para saber en que rama estamos trabajando. (master)
+git checkout -b nombrerama #para crear una bifurcacion utilizo el -b, en nombre rama le ponemos un nombre, generalmente las empresas ponen el numero de ticket
+git chekout master # para volver a la rama principal una vez que termine de hacer los cambios en la bifurcacion 
+git merge nombrederamaquemequierotraer #esto es para unificar ramas, en nombre pongo el nombre de la rama que bifurque
+
+#GitHub - como subir mis proyectos a git
+#Esto es por primera vez
+git remote add origin https://github.com/oterl/testgit.git #para indicar desdre donde hasta donde
+git push -u origin main #para hacer el push a la nube
+
+#A partir de la segunda vez
+git push #para subir el repo a github
+
+#si quiero agregar una nueva rama al repo porque aun no termine la modificacion
+# primero cambio de rama
+# despues hago un push de la rama
+git push -u origin ramaC
+

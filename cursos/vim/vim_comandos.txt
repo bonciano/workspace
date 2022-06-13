@@ -1,0 +1,61 @@
+################# CURSO VIM
+##
+## Para iniciar, instalar el manejador de plugins desde https://github.com/junegunn/vim-plug
+## 
+##
+con h voy a la izquierda
+con j voy hacia abajo
+con k voy hacia arriba
+con l voy hacia la derecha
+
+con w avanzo al inicio de la palabra siguiente
+con b retrocedo al inicio de la palabra anterior
+con e avanzo al final de la palabra siguiente
+
+con i activa el modo inserción antes del cursor
+con a activa el modo inserción despues del cursor
+con A activa el modo de inserción al final de la línea
+
+con x elimino de aun caracter
+
+con gd sobre la palabra voy a la definición de la constante, variable, etc.
+con gf sobre la definición y va a navegar hacia el archivo donde tengo la definición (antes hay que guardar)
+con crtl + o para volver al archivo anterior
+con ctrl + i voy hacia adelante sobre las últimas posiciones del cursor
+
+con dw elimino palabra por palabra de la línea en la que me encuentro parado
+con u deshago los cambios paso a paso
+con ctrl + r rehago los cambios paso a paso
+con d$ elimino desde la posición del cursor hasta el final de la línea sin eliminar la línea
+
+#combinar operadores con movimiento
+con de elimina desde el cursor hasta el final de la palabra
+con dw elimina desde el cursor hasta el inicio de la palabra siguiente
+con db elimina desde el cursor hasta el inicio de la la palabra anterior
+con d6w elimina desde el cursor hasta el inicio de la séptima palabra
+con 3w avanzo tres palabras hacia adelante
+
+con dd elimino la línea completa y borra el salto de línea
+con p pega la línea debajo de la línea del cursor
+con P pega la línea por encima de la línea del cursor
+
+con r reemplazo con el caracter que le indico el caracter sobre el que me encuentro parado
+con cw (change word) con el cursor en el inicio de la palabra borra la palabra y me permite escribir
+con ciw (change internal word) elimina toda la palabra sobre la que tengo el cursor independientemente de la posición en la que esté
+con gg voy al inicio del documento
+con GG voy al final del documento
+con 16G voy a la linea 16
+con /edad busco desde la posición del cursor en adelante la palabra edad dentro del documento + con n busco hacia atrás + con N busco hacia adelante
+con ?edad busco desde la posición del cursor hacia atrás la palabra edad dentro del documento
+con % al posicionar el cursor sobre la llave de una funcion, me lleva a la llave de cierre de la función
+con 0 nos lleva al inicio de la línea
+con $ nos lleva al final de la línea
+con :s/edad/anio reemplaza la primera ocurrencia de edad por anio
+con :s/edad/anio/g reemplaza todas las ocurrencias de la línea donde dice edad por anio
+con :%s/edad/anio/g reemplaza todas las ocurrencias sin preguntar nada, donde dice edad por anio
+con :%s/edad/anio/gc reemplaza todas las ocurrencias pretuntando palabra por palabra si la quiero cambiar
+
+
+
+
+

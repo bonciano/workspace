@@ -1,0 +1,15 @@
+git add --> de working directory a staging area
+git commit --> de staging area a local repo
+git push --> de local repo a remote repo
+git fetch --> de remote repo a local repo
+git checkout --> de local repo a working directory
+git merge --> de local repo a working directory
+
+
+
+git diff --> en terminal: nos dice que diferencias tiene el archivo que estamos editando con el de staging area
+git add archivo.txt --> sube el archivo a staging area
+git add . --> con el punto le decimos que suba a staging area TODOS los archivos que hayan sufrido modificaciones.
+git commit -m "mensaje de lo que se subio" --> paso de staging area a local repo con un mensaje de la version subida
+git push --> se va al github (nos pide nombre de usuario y contrasena)
+
