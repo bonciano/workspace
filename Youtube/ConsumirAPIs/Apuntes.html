@@ -1,0 +1,54 @@
+--------------- Taller consumir APIs con Python - GET 
+Si se usa una peticion del tipo GET, todos los parametros tienen que ir en la URL.
+Por ejemplo, si le quiero enviar parametros a una url, debo colocarlos con un signo de interrogacion --> Nombre del parametro --> Valor del parametro
+http://httpbin.org/get?Nombre=Carlos&Curso=APIsConPython
+No es la forma mas optima.
+Para enviar parametros de forma dinamica, hay que trabajar con DICCIONARIO (Clave, valor):
+
+--------------- Taller consumir APIs con Python - POST
+En el metodo POST, no se le puede hacer una peticion desde el navegador directamente, sino desde un script.
+Con el metodo POST se puede visualizar mas atributos que con GET
+La principal diferencia entre el metodo GET y POST, es que con el metodo POST nosotros vamos a crear algun recurso dentro del servidor.
+Con GET se puede enviar parametros dentro de la URL, mientras que con POST los debo enviar dentro del atributo "data".
+Internamente, POST va a tomar el diccionario y lo va a serializar, siempre y cuando el diccionario se lo pasemos a json. (Serializar es tomar el diccionario y convertirlo a un objeto json)
+
+Si enviamos los parametros con json, internamente POST se encarga de serializarlos.
+Si utilizamos "data", entonces nos debemos de encargar de serializarlos.
+(depende de las necesidades)
+
+
+--------------- Taller consumir APIs con Python - Encabezados
+Tanto el cliente como el servidor, estan obligados a enviar encabezados.
+Los encabezados le permiten al cliente y al servidos tener una comunicacion correcta.
+Ademas le sirven al programador para enviar datos muy importantes.
+Por ejemplo, para trabajar con access token. Esto se envia desde los encabezados y no dentro de los parametros; mucho menos dentro de la url.
+Se puede enviar N cantidad de encabezados.
+
+Para leer los encabezados, clase5
+
+
+--------------- Taller consumir APIs con Python - PUT & DELETE
+El metodo DELETE nos permitira eliminar un recurso del servidor.
+El metodo PUT nos permite actualizar un recurso.
+
+
+# GET para obtener algun recurso
+# POST para crear un recurso
+# PUT para actualizar un recurso
+# DELETE para elminiar un recurso
+# Nos son los unicos metodos HTTP, pero son los principales con los que podemos crear un CRUD completo.
+-----------------------------------------------
+
+--------------- Taller consumir APIs con Python - Chunks
+Ahora vamos a trabajar con archivos MUY pesados.
+Como sabemos, los servidores pueden retornar cualquier tipo de archivos, a saber:
+    XML
+    HTML
+    json
+    Imagenes
+    Videos
+    PDF
+    etc.
+
+
+
